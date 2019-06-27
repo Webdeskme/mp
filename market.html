@@ -15,6 +15,9 @@
       color: green;
       font-family: "Lucida Console", Monaco, monospace;
     }
+    table, th, td {
+      border: 1px solid black;
+    }
   </style>
 </head>
 <body>
@@ -24,7 +27,7 @@
   <p>Termibase for your terminal application management.</p>
   <ul class="nav justify-content-center">
     <li class="nav-item">
-      <a class="nav-link" href="market.html">Market</a>
+      <a class="nav-link" href="https://github.com/Webdeskme/termibase_market" target="_blank">Market</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="https://github.com/Webdeskme/termibase/wiki" target="_blank">Documintation</a>
@@ -43,25 +46,16 @@
 </div>
 
 <div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Manage Terminal:</h3>
-      <p>Quickly call and keep track of your terminal apps.</p>
-      <p>Tweek apps you have easily from your documents folder.</p>
-      <p>Never forget the name of an app or even that you have it.</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Create Apps:</h3>
-      <p>Buid terminal apps quickly with little effort.</p>
-      <p>Make changes and deploy fast!</p>
-      <p>Publish to are marketplace for others to enjoy or share privatly by anyother means like email.</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Explore:</h3>
-      <p>Check out our marketplace for applications you can start using today in your terminal.</p>
-      <p>Download from the website or directly from Termibase from your terminal.</p>
-    </div>
-  </div>
+  <table style="width:100%" id="table">
+  <tr>
+    <th>App</th>
+    <th>Description</th>
+    <th>Author</th>
+    <th>Version</th>
+    <th>Docs</th>
+    <th>Download</th>
+  </tr>
+  </table>
 </div>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
   <ul class="navbar-nav">
@@ -82,5 +76,8 @@
     </li>
   </ul>
 </nav>
+<script type="text/javascript" src="market.js"></script>
+
+</script>
 </body>
 </html>
